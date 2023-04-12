@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
     <title>Encriptador ONE-Oracle-Challenge</title>
 </head>
 <body>
-    <h1>Encriptador ONE-Oracle-Challenge</h1>
+    <icon>
+        <img src="multimedia/logo.svg"> 
+    </icon>
     <form action="main.js" method="post">
         <input type="text" name="texto" id="texto" placeholder="escriba aqui">
         <input type="submit" value="Encriptar">
         <input type="submit" value="Desencriptar">
     </form>
 
+<div class="area_respuesta">
 
-    <textarea>Ningun mensaje fue encontrado</textarea>
+    <textarea class="no-editable" id="Respuesta" readonly>
+        Contenido del área de texto que no se puede editar
+    </textarea>
+    <button onclick="copiarTexto()">Copiar</button>
+
+</div>
+
+
 
 
 </body>

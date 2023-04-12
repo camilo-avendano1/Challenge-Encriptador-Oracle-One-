@@ -1,0 +1,10 @@
+
+
+
+.no-editable {
+    background-color: #f7f7f7;
+    color: #666;
+    border: 1px solid #ccc;
+    cursor: default;
+  }
+  
