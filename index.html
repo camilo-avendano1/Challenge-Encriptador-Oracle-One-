@@ -9,23 +9,38 @@
     <title>Encriptador ONE-Oracle-Challenge</title>
 </head>
 <body>
-    <icon>
-        <img src="multimedia/logo.svg"> 
-    </icon>
-    <form action="main.js" method="post">
-        <input type="text" name="texto" id="texto" placeholder="escriba aqui">
-        <input type="submit" value="Encriptar">
-        <input type="submit" value="Desencriptar">
-    </form>
+    <div class="side-left">
+        <div class="icono">
+            <icon>
+             <img src="multimedia/logo.svg"> 
+            </icon>
+        </div>
+    
+        <div class="area_texto">
+            
+            <input type="text" name="texto" id="texto" placeholder="escriba aqui">
+    
+            <div class="botones">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </div>
 
-<div class="area_respuesta">
+        
+    <div class="side-right">
 
-    <textarea class="no-editable" id="Respuesta" readonly>
-        Contenido del área de texto que no se puede editar
-    </textarea>
-    <button onclick="copiarTexto()">Copiar</button>
+        <div class="area_respuesta">
+            <textarea id="Respuesta" readonly>
+                Contenido del área de texto que no se puede editar
+            </textarea>
+        </div>
 
-</div>
+        <div class="boton_copiar">
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+
+    </div>
 
 
 
