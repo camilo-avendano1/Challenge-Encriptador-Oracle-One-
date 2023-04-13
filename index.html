@@ -8,24 +8,33 @@
     <script src="js/main.js"></script>
     <title>Encriptador ONE-Oracle-Challenge</title>
 </head>
-<body>
+<body> 
+<div class="container">
     <div class="side-left">
         <div class="icono">
             <icon>
-             <img src="multimedia/logo.svg"> 
+             <img src="multimedia/logo.svg" alt="logo de alura"> 
             </icon>
         </div>
     
-        <div class="area_texto">
-            
-            <input type="text" name="texto" id="texto" placeholder="escriba aqui">
-    
-            <div class="botones">
-                <button onclick="encriptar()">Encriptar</button>
-                <button onclick="desencriptar()">Desencriptar</button>
+
+        <div class="titulo">
+
+            <div class="area_texto">
+
+                <input type="text" name="texto" id="texto" placeholder="escriba aqui">
             </div>
+
+            <div class="botones">
+                <button onclick="encriptar()" class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
         </div>
-    </div>
+
+
+        </div>
+
 
         
     <div class="side-right">
@@ -43,7 +52,7 @@
     </div>
 
 
-
+</div>
 
 </body>
 </html>

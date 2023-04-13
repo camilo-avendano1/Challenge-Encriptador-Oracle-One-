@@ -7,4 +7,81 @@
     border: 1px solid #ccc;
     cursor: default;
   }
+
+  body {
+    background-color: #E5E5E5; /* establece el color de fondo en gris */
+    margin: 0; /* elimina los márgenes predeterminados del cuerpo */
+  }
+  .container {
+    width: 100%; /* establece el ancho del contenedor en 100% */
+    height: 100vh; /* establece el alto del contenedor en 100% */
+    display: flex; /* establece el contenedor como un contenedor flex */
+    flex-direction: row; /* establece la dirección del contenedor flex */
+    align-items: center; /* alinea los elementos del contenedor flex en el centro */
+    justify-content: center; /* justifica los elementos del contenedor flex en el centro */
+  }
+  /* ajusta el tamaño y la posición de los elementos */
+  .side-left {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .side-right {
+    width: 38%;
+    height: 95vh;
+    background-color: #fff;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   
+  .titulo {
+    width: 90%;
+    height: 90%;
+  }
+  .area_texto input[type="text"] {
+    border: none; /* elimina el borde predeterminado */
+    background-color: transparent; /* establece el fondo transparente */
+    width: 100%; /* ocupa todo el ancho disponible */
+    height: 80vh; /* ocupa todo el alto disponible */
+  }
+  
+  /* ajusta los estilos de los botones */
+  .botones button {
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    width: 35%;   
+    height: 44px; 
+    border-color: #0A3871;
+  }
+  
+  .btn-encriptar {
+    background-color: #0A3871;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 5px;  
+    border-radius: 28px;
+  }
+  .btn-desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 6px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 24px;
+  }
+  
+  /* ajusta los estilos del ícono */
+  .icono {
+    position: absolute; /* establece la posición absoluta para el icono */
+    top: 4%; /* coloca el icono en la parte superior */
+    left: 2%; /* coloca el icono en la parte izquierda */
+    padding: 10px; /* agrega un espacio de relleno para el icono */
+  }
