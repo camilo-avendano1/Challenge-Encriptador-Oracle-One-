@@ -22,7 +22,7 @@
   }
   /* ajusta el tamaño y la posición de los elementos */
   .side-left {
-    width: 60%;
+    width: 69%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     justify-content: center;
   }
   .side-right {
-    width: 38%;
+    width: 29%;
     height: 95vh;
     background-color: #fff;
     border-radius: 5%;
@@ -44,11 +44,27 @@
     width: 90%;
     height: 90%;
   }
+
+  .area_texto {
+    width: 100%; /* ocupa todo el ancho disponible */
+    height: 58vh;
+    margin: 10%;
+    color: #0A3871;
+  }
+  *::placeholder {
+    color: #0A3871;
+  }
+
+  input:focus {
+    outline: none;
+    resize: none;
+  }
+  
   .area_texto input[type="text"] {
     border: none; /* elimina el borde predeterminado */
     background-color: transparent; /* establece el fondo transparente */
-    width: 100%; /* ocupa todo el ancho disponible */
-    height: 80vh; /* ocupa todo el alto disponible */
+    font-size: 20px;
+
   }
   
   /* ajusta los estilos de los botones */
@@ -56,8 +72,8 @@
     padding: 10px;
     border: none;
     margin: 5px;
-    width: 35%;   
-    height: 44px; 
+    width: 45%;   
+    height: 55px; 
     border-color: #0A3871;
   }
   
@@ -67,7 +83,7 @@
     padding: 10px;
     border: none;
     margin: 5px;  
-    border-radius: 28px;
+    border-radius: 24px;
   }
   .btn-desencriptar {
     background-color: #D8DFE8;
@@ -84,4 +100,46 @@
     top: 4%; /* coloca el icono en la parte superior */
     left: 2%; /* coloca el icono en la parte izquierda */
     padding: 10px; /* agrega un espacio de relleno para el icono */
+  }
+
+
+  .btn_copiar {
+    background-color: #0A3871;
+    color: white;
+    width: 1000000rem;   
+    height: 55px;   
+    padding: 10px;
+    border: none;
+    margin: 5px;  
+    border-radius: 24px;
+  }
+  .btn-copiar {
+    background-color: #0A3871;
+    color: white; 
+    height: 55px;   
+    width: 250px;
+    padding: 10px;
+    border: none;
+    margin: 10px;  
+    border-radius: 24px;
+  }
+  .area_respuesta {
+    width: 100%; /* ocupa todo el ancho disponible */
+    height: 100vh;
+    margin:10%;
+    margin-right: 3%;
+    color: #0A3871;
+
+
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+  .respuesta{
+    border: none; /* elimina el borde predeterminado */
+    background-color: transparent; /* establece el fondo transparente */
+    font-size: 20px;
+    resize: none;
+    overflow: hidden;
   }

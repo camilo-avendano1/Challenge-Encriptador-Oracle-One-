@@ -22,7 +22,7 @@
 
             <div class="area_texto">
 
-                <input type="text" name="texto" id="texto" placeholder="escriba aqui">
+                <input type="text" name="texto" id="texto" placeholder="Ingrese el texto aqui" autocomplete="off">
             </div>
 
             <div class="botones">
@@ -40,13 +40,13 @@
     <div class="side-right">
 
         <div class="area_respuesta">
-            <textarea id="Respuesta" readonly>
+            <textarea class="respuesta "id="Respuesta" readonly>
                 Contenido del área de texto que no se puede editar
             </textarea>
         </div>
 
         <div class="boton_copiar">
-            <button onclick="copiarTexto()">Copiar</button>
+            <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
         </div>
 
     </div>
